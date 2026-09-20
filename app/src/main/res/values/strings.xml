@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">清启</string>
+    <string name="accessibility_service_label">清启 · 开屏广告跳过</string>
+    <string name="accessibility_desc">清启 通过无障碍服务自动检测并跳过应用开屏广告。开启后，当检测到“跳过 / Skip / 关闭”等按钮时会自动点击，帮助快速进入应用。</string>
+    <string name="hint_keywords">跳过广告关键词（逗号分隔）</string>
+    <string name="btn_save">保存设置</string>
+    <string name="btn_open_settings">前往开启无障碍服务</string>
+    <string name="status_on">✅ 清启服务已开启，正在守护你</string>
+    <string name="status_off">⚠️ 清启服务未开启，点击按钮去系统设置开启</string>
+    <string name="title_delay">跳过延迟（毫秒）</string>
+    <string name="tip">提示：开屏广告属应用内行为，清启仅做“自动点击跳过”，不篡改应用数据；部分应用为全屏点击跳转广告，需其提供“跳过”按钮方可生效。Android 12+ 对无障碍有限制，如失效请检查电池白名单与“允许后台运行”。</string>
+</resources>

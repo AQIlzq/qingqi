@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.text.TextUtils;
+import android.accessibilityservice.AccessibilityServiceInfo;
 import android.view.accessibility.AccessibilityManager;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -67,9 +68,9 @@ public class MainActivity extends AppCompatActivity {
         AccessibilityManager am =
                 (AccessibilityManager) context.getSystemService(Context.ACCESSIBILITY_SERVICE);
         if (am == null) return false;
-        List<android.accessibilityservice.AccessibilityServiceInfo> list =
+        List<AccessibilityServiceInfo> list =
                 am.getEnabledAccessibilityServiceList(AccessibilityServiceInfo.FEEDBACK_ALL_MASK);
-        for (android.accessibilityservice.AccessibilityServiceInfo info : list) {
+        for (AccessibilityServiceInfo info : list) {
             if (info.getResolveInfo().serviceInfo.packageName.equals(context.getPackageName())
                     && info.getResolveInfo().serviceInfo.name.equals(service.getName())) {
                 return true;
